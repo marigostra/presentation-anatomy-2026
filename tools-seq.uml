@@ -1,0 +1,19 @@
+@startuml
+scale 2
+participant Пользователь as u
+participant "FMA" as fma
+participant "YandexGPT" as m
+
+u -> m: "Запрос"
+activate m
+m -> u: "Запрос поиска понятий"
+deactivate m
+u -> fma: "Поиск понятий"
+activate fma
+fma -> u: "Результат поиска"
+deactivate fma
+u -> m: "Повторный запрос с результатами поиска"
+activate m
+m -> u: "Обработанный результат поиска"
+deactivate m
+@enduml

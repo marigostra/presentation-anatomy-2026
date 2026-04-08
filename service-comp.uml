@@ -1,0 +1,17 @@
+@startuml
+scale 3
+component "Облачный сервис" as cloud {
+component "Веб-сервер" as web
+component "Оркестратор" as orch
+component "FMA" as fma
+port "Endpoint" as ep 
+}
+
+component "YandexGPT" as llm
+
+
+ep <--> web
+web <--> orch
+orch <--> llm
+orch <--> fma
+@enduml
