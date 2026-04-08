@@ -7,4 +7,5 @@ out
 *.eps
 *.mps
 *.snm
-	
+*.toc
+*.nav
