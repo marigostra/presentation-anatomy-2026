@@ -6,7 +6,7 @@ participant "YandexGPT" as m
 
 u -> m: "Запрос"
 activate m
-m -> u: "Запрос поиска понятий"
+m -> u: "Вызов tool для поиска понятий"
 deactivate m
 u -> fma: "Поиск понятий"
 activate fma

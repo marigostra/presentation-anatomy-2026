@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{psfrag}
-\usepackage{hyperref}
+ \usepackage{hyperref}
 \usepackage[normalem]{ulem}
 
 \beamertemplatenavigationsymbolsempty
@@ -35,7 +35,7 @@
 \DeclareMathSymbol{\rho}{\mathord}{greek}{"1A}                                                 
 \DeclareMathSymbol{\sigma}{\mathord}{greek}{"1B}                                               
 \DeclareMathSymbol{\tau}{\mathord}{greek}{"1C}                                                 
-             \DeclareMathSymbol{\upsilon}{\mathord}{greek}{"1D}                                             
+\DeclareMathSymbol{\upsilon}{\mathord}{greek}{"1D}                                             
 \DeclareMathSymbol{\phi}{\mathord}{greek}{"1E}                                                 
 \DeclareMathSymbol{\chi}{\mathord}{greek}{"1F}                                                 
 \DeclareMathSymbol{\psi}{\mathord}{greek}{"20}                                                 
@@ -91,5 +91,23 @@
 \includegraphics[width=9cm,height=5cm,keepaspectratio]{demo-uml.pdf}
 \end{figure}
 \end{frame}
+
+\begin{frame}
+\frametitle{Обработка запроса}
+\framesubtitle{последовательность обмена информацией для~получения ответа}
+\begin{figure}[h]
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{tools-seq.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Компоненты системы}
+\framesubtitle{Структура взаимодействия компонентов системы}
+\begin{figure}[h]
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{service-comp.pdf}
+\end{figure}
+\end{frame}
+
+
 
 \end{document}
